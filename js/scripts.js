@@ -14,7 +14,7 @@ while (true) {
     }
 }
 while (Aventura == true) {
-    alert("Genial, comencemos... recuerda que debes responder con Si o No en la mayoria de los casos a no ser que se diga lo contrario.");
+    alert("Genial, comencemos... recuerda que debes responder con el numero de la opcion correspondiente.");
 
     alert("Te encuentras caminando hacia tu casa luego de un largo dia de trabajo, ya hace tiempo que tienes en mente comprar una casa...");
 
@@ -54,24 +54,30 @@ while (Aventura == true) {
     let TipoCasa = prompt("Me gustaria... \n1. Una casa prefabricada \n2. Que te comuniques conmigo para hacer una a medida");
 
     if (TipoCasa == 1) {
-        Prefab = true
-        break;
+        
+        alert("Genial al comprar una prefabricada, el total tiene un descuento del 10%! por favor, selecciona la casa...")
+        let CasaPrefab = parseIntprompt("Por favor, selecciona cual deseas (1, 2 o 3) \n1. Prefabricada de lujo \n2. Prefabricada clase media \n3. Prefabricada basica")
+        if (CasaPrefab == 1) {
+            ValorCasa = 12000;
+            TipoCasaPrefab = "de lujo"
+        } else if (CasaPrefab == 2) {
+            ValorCasa = 9500;
+            TipoCasaPrefab = "clase media"
+        } else if (CasaPrefab == 3) {
+            ValorCasa = 7200;
+            TipoCasaPrefab = "basica"
+        }
+        
+        alert("Asi que una casa " + TipoCasaPrefab + "" + "eh? excelente eleccion! esa misma vale " + ValorCasa + ".")
     } else if (TipoCasa == 2) {
         alert("Genial, por favor anotame tu numero de celular en esta libreta asi me comunico");
         let NumeroCelular = prompt ("Agarras la libreta y escribes tu numero de celular...");
         alert("Excelente, entonces tu numero es " + NumeroCelular + " " + "¿cierto? Muy bien, me comunicare contigo en las proximas 24 horas, ¡Que te vaya mas que bien!");
-
+        alert("Sales del local, con una sonrisa por la gran atencion y precios, luego de unas cuadras, llegas a tu casa y terminas el dia.")
         break;
     }
 }
+
 while (Prefab == true) {
-    alert("Genial al comprar una prefabricada, el total tiene un descuento del 10%! por favor, selecciona la casa...")
-    let CasaPrefab = prompt("Por favor, selecciona cual deseas (1, 2 o 3) \n1. Prefabricada de lujo \n2. Prefabricada clase media \n3. Prefabricada basica")
-    if (CasaPrefab == 1) {
-        ValorCasa = 12000;
-    } else if (CasaPrefab == 2) {
-        ValorCasa = 9500;
-    } else if (CasaPrefab == 3) {
-        ValorCasa = 7200;
-    }
+
 }
