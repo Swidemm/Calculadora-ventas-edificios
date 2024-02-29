@@ -1,6 +1,6 @@
 let inicio = true
 while (true) {
-        let Confirmacion = prompt ("Bienvenido, deseas jugar?  \n1. Si \n2. No");
+        let Confirmacion = prompt("Bienvenido, deseas jugar?  \n1. Si \n2. No");
     if (Confirmacion == 1) {
         Aventura = true;
         break
@@ -56,6 +56,7 @@ while (Aventura == true) {
     if (TipoCasa == 1) {
 
         let CasaPrefab = prompt("Genial, por favor, selecciona cual deseas (1, 2 o 3) \n1. Prefabricada de lujo \n2. Prefabricada clase media \n3. Prefabricada basica")
+
         if (CasaPrefab == 1) {
             ValorCasa = 12000;
             TipoCasaPrefab = "de lujo"
@@ -66,22 +67,36 @@ while (Aventura == true) {
             ValorCasa = 7200;
             TipoCasaPrefab = "basica"
         }
+
         let Total = ValorCasa + ValorTerreno
         alert("Asi que una casa " + TipoCasaPrefab + " " + "eh? excelente eleccion! esa misma vale " + ValorCasa + ".")
+
         alert("Excelente, entonces seria... " + Total + ".")
-        alert("Respondes: Genial entonces! ¿Para cuando estaria todo esto?")ç
-        alert("Para aproximadamente 7 dias habiles desde que pagas")
-        let ModoPago = prompt("Pago con... \n1. efectivo \n2. debito \n1. credito ")
-        let NumeroCelularTotal = prompt("excelente eleccion, ya mismo te cobro... ¡y listo! Ya es todo tuyo, en los proximos dias habiles me voy a estar comunicando para aclarar los detalles, por favor, dejame tu numero de telefono...")
+
+        alert("Respondes: Genial entonces! ¿Para cuando estaria todo esto?");
+
+        alert("Para aproximadamente 7 dias habiles desde que pagas");
+
+        let ModoPago = prompt("Pago con... \n1. efectivo \n2. debito \n1. credito ");
+
+        let NumeroCelularTotal = prompt("excelente eleccion, ya mismo te cobro... ¡y listo! Ya es todo tuyo, en los proximos dias habiles me voy a estar comunicando para aclarar los detalles, por favor, dejame tu numero de telefono...");
+
         alert("Excelente, entonces tu numero es " + NumeroCelular + " " + "¿cierto? Muy bien, me comunicare contigo en los proximos 7 dias habiles, ¡Que te vaya mas que bien!");
-        alert("Sales del local, con una sonrisa por la gran atencion y precios, luego de unas cuadras, llegas a tu departamento, ilusionado de haber logrado tener tu propia casa, te acuestas y terminas el dia.")
+
+        alert("Sales del local, con una sonrisa por la gran atencion y precios, luego de unas cuadras, llegas a tu departamento, ilusionado de haber logrado tener tu propia casa, te acuestas y terminas el dia.");
+
         break;
 
     } else if (TipoCasa == 2) {
+
         alert("Genial, por favor anotame tu numero de celular en esta libreta asi me comunico");
+
         let NumeroCelular = prompt ("Agarras la libreta y escribes tu numero de celular...");
+
         alert("Excelente, entonces tu numero es " + NumeroCelular + " " + "¿cierto? Muy bien, me comunicare contigo en las proximas 24 horas, ¡Que te vaya mas que bien!");
-        alert("Sales del local, con una sonrisa por la gran atencion y precios, luego de unas cuadras, llegas a tu departamento y terminas el dia.")
+
+        alert("Sales del local, con una sonrisa por la gran atencion y precios, luego de unas cuadras, llegas a tu departamento y terminas el dia.");
+
         break;
     }
 }
