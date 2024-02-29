@@ -54,21 +54,8 @@ while (Aventura == true) {
     let TipoCasa = prompt("Me gustaria... \n1. Una casa prefabricada \n2. Que te comuniques conmigo para hacer una a medida");
 
     if (TipoCasa == 1) {
-        
-        alert("Genial al comprar una prefabricada, el total tiene un descuento del 10%! por favor, selecciona la casa...")
-        let CasaPrefab = parseIntprompt("Por favor, selecciona cual deseas (1, 2 o 3) \n1. Prefabricada de lujo \n2. Prefabricada clase media \n3. Prefabricada basica")
-        if (CasaPrefab == 1) {
-            ValorCasa = 12000;
-            TipoCasaPrefab = "de lujo"
-        } else if (CasaPrefab == 2) {
-            ValorCasa = 9500;
-            TipoCasaPrefab = "clase media"
-        } else if (CasaPrefab == 3) {
-            ValorCasa = 7200;
-            TipoCasaPrefab = "basica"
-        }
-        
-        alert("Asi que una casa " + TipoCasaPrefab + "" + "eh? excelente eleccion! esa misma vale " + ValorCasa + ".")
+        Aventura2 = true
+        break;
     } else if (TipoCasa == 2) {
         alert("Genial, por favor anotame tu numero de celular en esta libreta asi me comunico");
         let NumeroCelular = prompt ("Agarras la libreta y escribes tu numero de celular...");
@@ -78,6 +65,20 @@ while (Aventura == true) {
     }
 }
 
-while (Prefab == true) {
-
+while (Aventura2 == true) {
+    
+    alert("Genial al comprar una prefabricada, el total tiene un descuento del 10%! por favor, selecciona la casa...")
+    let CasaPrefab = prompt("Por favor, selecciona cual deseas (1, 2 o 3) \n1. Prefabricada de lujo \n2. Prefabricada clase media \n3. Prefabricada basica")
+    if (CasaPrefab == 1) {
+        ValorCasa = 12000;
+        TipoCasaPrefab = "de lujo"
+    } else if (CasaPrefab == 2) {
+        ValorCasa = 9500;
+        TipoCasaPrefab = "clase media"
+    } else if (CasaPrefab == 3) {
+        ValorCasa = 7200;
+        TipoCasaPrefab = "basica"
+    }
+    
+    alert("Asi que una casa " + TipoCasaPrefab + "" + "eh? excelente eleccion! esa misma vale " + ValorCasa + ".")
 }
